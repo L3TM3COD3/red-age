@@ -1,5 +1,21 @@
 html {
 	font-size: 16px;
+
+	@include w1366 {
+		font-size: 15px;
+	}
+
+	@include w1280 {
+		font-size: 14px;
+	}
+
+	@include w1024 {
+		font-size: 13px;
+	}
+
+	@include h600 {
+		font-size: 12px;
+	}
 }
 
 body {

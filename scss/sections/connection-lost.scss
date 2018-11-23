@@ -20,16 +20,6 @@
     height: 100vh;
 }
 
-// .blur {
-//     background: black;
-//     opacity: .8;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-// }
-
 .main {
     z-index: 10;
     display: flex;
@@ -38,10 +28,27 @@
 
     .wifi{
         width: 24%;
+        
+        @include w1366 {
+
+            width: 15%;
+        }
     }
 
     .logo {
         width: 100%;
+
+        @include w1366 {
+
+            width: 97%;
+            margin-left: -3%;
+        }
+
+        @include w1024 {
+
+            width: 80%;
+            margin-left: -15%;
+        }
     }
 
     &__info {
@@ -53,7 +60,7 @@
         &__title {
             font-family: unineue_heavy;
             line-height: normal;
-            font-size: 45px;
+            font-size: rem(45px);
             color: $grey;
         }
 
@@ -65,7 +72,7 @@
             &__title {
                 font-family: unineue_bold;
                 line-height: normal;
-                font-size: 30px;
+                font-size: rem(30px);
                 color: #F13939;
             }
 
@@ -73,21 +80,30 @@
                 margin-left: 1.5%;
                 font-family: unineue_thin;
                 line-height: normal;
-                font-size: 30px;
+                font-size: rem(30px);
                 color: #FFFFFF;
             }
         }
     }
 
     .tip {
+        color: #808080;
         margin-top: 10%;
         padding-top: 2%;
-        border-top: 1px solid rgba($color: #ffffff, $alpha: .2);
+        border-top: rem(1px) solid rgba($color: #ffffff, $alpha: .2);
         width: 80%;
-        height: 90px;
+        height: rem(90px);
         font-family: unineue;
         line-height: normal;
-        font-size: 25px;
+        font-size: rem(25px);
+
+        @include w1280 {
+            font-size: rem(23px);
+        }
+
+        @include w1024 {
+            font-size: rem(21px);
+        }
     }
 }
 
@@ -96,5 +112,14 @@
     position: absolute;
     bottom: -3%;
     left: 68%;
-    width: 520px;
+    width: rem(520px);
+
+    @include w1366 {
+        width: rem(450px);
+    }
+
+    @include w1024 {
+        left: 64%;
+        bottom: 0;
+    }
 }

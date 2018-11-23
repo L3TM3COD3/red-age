@@ -1,0 +1,30 @@
+//values 
+$w1366: 1366px;
+$w1280: 1280px;
+$w1024: 1024px;
+$h600: 600px;
+
+//adaptive
+@mixin w1366 {
+  @media screen and (max-width: $w1366) {
+    @content;
+  }
+}
+
+@mixin w1280 {
+  @media screen and (max-width: $w1280) {
+    @content;
+  }
+}
+  
+@mixin w1024 {
+  @media screen and (max-width: $w1024) {
+    @content;
+  }
+}
+  
+@mixin h600 {
+  @media screen and (max-height: $h600) {
+    @content;
+  }
+}
