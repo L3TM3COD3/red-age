@@ -1,0 +1,10 @@
+//сonfig
+@import "config/mixins";
+@import "config/variables.scss";
+
+//layout
+@import "layout/base";
+@import "layout/fonts";
+
+//sections
+@import "sections/connection-lost";
