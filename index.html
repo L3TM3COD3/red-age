@@ -6,6 +6,7 @@
 	<title>Соединение прервано</title>
 	<link rel="stylesheet" href="css/main/main.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<script src="js/jQuery.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -15,10 +16,10 @@
 			<img src="img/wifi.png" alt="wifi" class="wifi">
 			<img src="img/logo.svg" alt="logo" class="logo">
 			<div class="main__info">
-				<div class="main__info__title">Соединение было прервано</div>
+				<div id="header" class="main__info__title">Соединение было прервано</div>
 				<div class="main__info__reason">
 					<div class="main__info__reason__title">Причина:</div>
-					<div class="main__info__reason__name">анти-афк</div>
+					<div id="reason" class="main__info__reason__name">анти-афк</div>
 				</div>
 			</div>
 			<div class="tip">Быстро перезайти на сервер можно через кнопку F1<br>и выбрать наш сервер в списке.</div>
@@ -26,4 +27,5 @@
 		<img src="img/man.png" alt="мужик с радио" class="radio-man">
 	</div>
 </body>
+<script src="js/main.js"></script>
 </html> 
